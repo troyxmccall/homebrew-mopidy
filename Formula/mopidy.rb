@@ -33,10 +33,7 @@ class Mopidy < Formula
     "with-theora",
     "with-two-lame",
   ]
-  depends_on "gst-python" => [
-    "without-python",
-    "with-python@2",
-  ]
+  depends_on "troyxmccall/mopidy/gst-python@2"
 
   resource "backports_abc" do
     # Required by tornado
