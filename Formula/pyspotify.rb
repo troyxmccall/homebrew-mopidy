@@ -9,7 +9,7 @@ class Pyspotify < Formula
   depends_on "python@2" => :recommended
   depends_on "python" => :recommended
   depends_on "libffi"
-  depends_on "mopidy/mopidy/libspotify"
+  depends_on "troyxmccall/mopidy/libspotify"
 
   resource "cffi" do
     url "https://files.pythonhosted.org/packages/e7/a7/4cd50e57cc6f436f1cc3a7e8fa700ff9b8b4d471620629074913e3735fb2/cffi-1.11.5.tar.gz"

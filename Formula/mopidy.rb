@@ -3,7 +3,7 @@ class Mopidy < Formula
   homepage "https://www.mopidy.com/"
   url "https://files.pythonhosted.org/packages/01/20/e692e4bc7b84c61b2af10f2f7c233f7cec833d7b34f03bdbbec26fbe723b/Mopidy-2.2.2.tar.gz"
   sha256 "b41f5ab1e83c5e5f74fdb792c8fd5ba63b7fd227d04df266dba5189bc552a93d"
-  head "https://github.com/mopidy/mopidy.git"
+  head "https://github.com/troyxmccall/mopidy.git"
 
   depends_on "python@2" if MacOS.version <= :snow_leopard
   depends_on "gst-plugins-base" => [

@@ -1,12 +1,12 @@
 class MopidyBeets < Formula
   desc "Mopidy extension for playing music from Beets with its web plugin"
-  homepage "https://github.com/mopidy/mopidy-beets"
+  homepage "https://github.com/troyxmccall/mopidy-beets"
   url "https://files.pythonhosted.org/packages/01/f1/b5104e2fdd1cce139804bb2298dd7cdc295f7a257386cc0302cf5d794586/Mopidy-Beets-3.1.0.tar.gz"
   sha256 "bb0ad86c1ce70942a98a6d7e92efe71dbdbec411fbde7c5d8b3c745103a64a21"
-  head "https://github.com/mopidy/mopidy-beets.git"
+  head "https://github.com/troyxmccall/mopidy-beets.git"
 
   depends_on "python@2" if MacOS.version <= :snow_leopard
-  depends_on "mopidy/mopidy/mopidy"
+  depends_on "troyxmccall/mopidy/mopidy"
 
   # Dependencies assumed bundled by mopidy:
   # - pykka
