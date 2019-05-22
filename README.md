@@ -3,7 +3,7 @@
 These formulae let you install Mopidy and Mopidy extensions with all
 required dependencies on macOS.
 
-This is a work-around for broken Mopidy v 2.2.2 on MacOS
+This is a work-around for https://github.com/mopidy/homebrew-mopidy/issues/32
 
 ## How to install these formulae?
 
