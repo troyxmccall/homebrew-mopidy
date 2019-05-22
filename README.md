@@ -3,21 +3,31 @@
 These formulae let you install Mopidy and Mopidy extensions with all
 required dependencies on macOS.
 
+This is a work-around for broken Mopidy v 2.2.2 on MacOS
+
 ## How to install these formulae?
 
-1. Run `brew tap mopidy/mopidy` to get access to formulae in this repo.
+1. Remove existing broken deps `brew uninstall --ignore-dependencies gst-python pygobject3`
 
-2. Run `brew search <query>` to find the formula you're looking for.
+2. Untap mopidy port `brew untap mopidy/mopidy`
 
-2. Run `brew install <formula>` to install the formula and all needed
+3. Tap this fork ` brew tap troyxmccall/mopidy` 
+
+4. Run `brew search <query>` to find the formula you're looking for.
+
+5. Run `brew install <formula>` to install the formula and all needed
    dependencies.
+6. If you have CLANG errors `unable to find module _spotify` try running `pip install Mopidy-Spotify`   
+
+
+
 
    If the formula conflicts with one from another tap, you can use `brew
-   install mopidy/mopidy/<formula>` to explicitly install the formula from this
+   install troyxmccall/mopidy/<formula>` to explicitly install the formula from this
    repo.
 
    You can also install via URL: `brew install
-   https://raw.github.com/mopidy/homebrew-mopidy/master/Formula/<formula>.rb`
+   https://raw.github.com/troyxmccall/homebrew-mopidy/master/Formula/<formula>.rb`
 
 ## Troubleshooting
 
