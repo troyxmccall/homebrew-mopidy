@@ -3,7 +3,7 @@
 These formulae let you install Mopidy and Mopidy extensions with all
 required dependencies on macOS.
 
-This is a work-around for https://github.com/mopidy/homebrew-mopidy/issues/32
+This is a temporary work-around for https://github.com/mopidy/homebrew-mopidy/issues/32 while the Mopidy team works on full Python 3 support. 
 
 ## How to install these formulae?
 
