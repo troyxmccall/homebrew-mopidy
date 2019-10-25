@@ -3,7 +3,7 @@
 These formulae let you install Mopidy and Mopidy extensions with all
 required dependencies on macOS.
 
-This is a temporary work-around for https://github.com/mopidy/homebrew-mopidy/issues/32 while the Mopidy team works on full Python 3 support. 
+This is a temporary work-around for https://github.com/mopidy/homebrew-mopidy/issues/32 while the Mopidy team works on full Python 3 support.
 
 ## How to install these formulae?
 
@@ -11,16 +11,20 @@ This is a temporary work-around for https://github.com/mopidy/homebrew-mopidy/is
 
 2. Untap mopidy port `brew untap mopidy/mopidy`
 
-3. Tap this fork ` brew tap troyxmccall/mopidy` 
+3. Tap this fork ` brew tap troyxmccall/mopidy`
 
 4. Run `brew search <query>` to find the formula you're looking for.
 
 5. Run `brew install <formula>` to install the formula and all needed
-   dependencies.
-6. If you have CLANG errors `unable to find module _spotify` try running `pip install Mopidy-Spotify`   
+   dependencies. 
+   I recommend running: 
+   
+   `brew install troyxmccall/mopidy/gst-python@2 troyxmccall/mopidy/pygobject3@2 troyxmccall/mopidy/mopidy troyxmccall/mopidy/mopidy-spotify`
+  
+   That should resolve issues similair to: `File "/usr/local/lib/python2.7/site-packages/gi/__init__.py", line 42, in <module>
+ImportError: cannot import name _gi`
 
-
-
+6. If you have CLANG errors `unable to find module _spotify` try running `pip install Mopidy-Spotify`
 
    If the formula conflicts with one from another tap, you can use `brew
    install troyxmccall/mopidy/<formula>` to explicitly install the formula from this
