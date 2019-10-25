@@ -1,4 +1,4 @@
-class Pygobject3 < Formula
+class Pygobject3AT2 < Formula
   desc "GNOME Python bindings (based on GObject Introspection)"
   homepage "https://wiki.gnome.org/Projects/PyGObject"
   url "https://download.gnome.org/sources/pygobject/3.34/pygobject-3.34.0.tar.xz"
